@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.subspec 'Core' do |cs|
+    cs.dependency 'YYImage/WebP'
     cs.source_files = 'PhotoBrowser/Core/*.swift'
   end
 

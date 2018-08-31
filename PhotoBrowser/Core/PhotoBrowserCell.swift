@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYImage
 
 public protocol PhotoBrowserCellDelegate: NSObjectProtocol {
     /// 拖动时回调。scale:缩放比率
@@ -50,7 +51,7 @@ open class PhotoBrowserCell: UICollectionViewCell {
     open var photoLoader: PhotoLoader?
 
     /// 显示图像
-    open let imageView = UIImageView()
+    open let imageView = YYAnimatedImageView()
 
     /// 保存原图url，用于点查看原图时使用
     open var rawUrl: URL?
